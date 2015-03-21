@@ -4,7 +4,18 @@
 <title>Hello world</title>
 <meta charset="utf-8" >
 <script>
-window.onload = setInterval(createColorDiv,300);
+window.onload = function(){
+	var speed = 100;
+	var createBoxId = setInterval(createColorDiv,speed);
+	document.onclick=function(){
+		if (createBoxId == null){
+			createBoxId = setInterval(createColorDiv,speed);
+		} else{
+			clearInterval(createBoxId);
+			createBoxId = null;
+		};
+}
+}
 function createColorDiv(){
 	var size ="50px";
 	var divNum = 1;
