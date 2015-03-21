@@ -3,6 +3,26 @@
 <head>
 <title>Hello world</title>
 <meta charset="utf-8" >
+<script>
+window.onload = setInterval(createColorDiv,300);
+function createColorDiv(){
+	var size ="50px";
+	var divNum = 1;
+	for(var i=0; i<divNum; i++){
+		var colorDiv = document.createElement("div");
+		colorDiv.style.height = size;
+		colorDiv.style.width = size;
+		colorDiv.style.float = "left";
+		colorDiv.style.borderWidth = "1px";
+		var r = Math.floor(Math.random()*255);
+		var g = Math.floor(Math.random()*255);
+		var b = Math.floor(Math.random()*255);
+		var rgb = "rgb(" + r + "," + g + "," + b + ")";
+		colorDiv.style.backgroundColor = rgb;
+		document.body.appendChild(colorDiv);
+	}
+}
+</script>
 </head>
 <body>
 <p>Hello world!</p>
