@@ -1,0 +1,32 @@
+/* @group general styles
+---------------------------------------------------------------*/
+body,div,ul,li,dl,dd,h2,h3,h4,p{  margin:0;padding:0;}
+body {  width:85%; margin:0 auto; 
+font-family:"Lucida Grande","微软雅黑",Verdana,Lucida,Arial,Helvetica,"宋体",sans-serif;}
+/*  @mainNav
+----------------------------------------------------------------*/
+#mainNav{
+	margin:8% 0 12px;
+	list-style-type:none;
+	overflow:hidden;
+}
+#mainNav li{  float:left;}
+#mainNav li a{  display:block; text-decoration:none; color:#666; font-size:30px; padding:0 1em; border-right:1px solid black;}
+#mainNav li:last-child a{  border-right:none;}
+
+/*  @article
+-----------------------------------------------------------------*/
+#article{  padding:30px;; width:75%; float:left; border-top:1px solid #999;}
+h3{ margin-bottom:1em;}
+#article h4{  margin:1em 0;}
+#article p{  text-indent:2em;}
+
+/*  @articleNav
+-----------------------------------------------------------------*/
+#articleNav{  border-left:1px solid #ccc; padding-left:0.5em; width:14%; position:fixed; right:5%;}
+#articleNav dt{  font-weight:bold; color:#333;}
+#articleNav dd{  text-indent:1.5em;}
+#articleNav dd a{  text-decoration:none; color:#666; line-height:1.4em;}
+#articleNav dd a:hover{  font-weight:bold;}
+
+/*  @about me  */

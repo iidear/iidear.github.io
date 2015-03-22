@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hello world</title>
-<meta charset="utf-8" >
-<script>
-window.onload = function(){
-	var speed = 100;
-	var createBoxId = setInterval(createColorDiv,speed);
-	document.onclick=function(){
-		if (createBoxId == null){
-			createBoxId = setInterval(createColorDiv,speed);
-		} else{
-			clearInterval(createBoxId);
-			createBoxId = null;
-		};
-}
-}
-function createColorDiv(){
-	var size ="50px";
-	var divNum = 1;
-	for(var i=0; i<divNum; i++){
-		var colorDiv = document.createElement("div");
-		colorDiv.style.height = size;
-		colorDiv.style.width = size;
-		colorDiv.style.float = "left";
-		colorDiv.style.borderWidth = "1px";
-		var r = Math.floor(Math.random()*255);
-		var g = Math.floor(Math.random()*255);
-		var b = Math.floor(Math.random()*255);
-		var rgb = "rgb(" + r + "," + g + "," + b + ")";
-		colorDiv.style.backgroundColor = rgb;
-		document.body.appendChild(colorDiv);
-	}
-}
-</script>
+<title>Reading Notes</title>
+<meta charset="utf-8" />
+<meta name="Author" content="iidear" />
+<link rel="stylesheet" href="style.css" />
+<script src="javascript/js.js"></script>
 </head>
 <body>
-<p>Hello world!</p>
+<ul id = "mainNav">
+    <li><a href="index.html">Home</a></li>
+<!--<li><a href="index.html">Notes</a></li>     -->
+</ul>
+<div id = "article">
+<h3>Looking for A job</h3>
+<table id="aboutMe">
+	<tr>
+		<td colspan="2">Hello,World!</td>
+	</tr>
+	<tr>
+		<td>Name:</td><td>Xiao Hao</td>
+	</tr>
+	<tr>
+		<td>Skills:</td><td>HTML, CSS, JavaScript, Ajax, jQuery</td>
+	</tr>
+	<tr>
+		<td>E-mail:</td><td>iidear2015@gmail.com</td>
+	</tr>
+</table>
+</div>
+<dl id="articleNav">
+<dt>前端之路</dt>
+<dd id="design"><a href="#">交互设计</a></dd>
+<dd id="html"><a href="#">HTML+CSS</a></dd>
+<dd id="javascript"><a href="#">JavaScript</a></dd>
+<dd id="jsFrame"><a href="#">JS框架</a></dd>
+<dd id="http"><a href="#">HTTP</a></dd>
+<dd id="webPerformance"><a href="#">Web性能</a></dd>
+<dt>杂记</dt>
+<dd id="thinking"><a href="#">随想</a></dd>
+<dd id="forFun"><a href="#">For fun</a></dd>
+</dl>
 </body>
 </html>

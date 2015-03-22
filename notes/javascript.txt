@@ -1,0 +1,6 @@
+﻿<h3>《JavaScript高级程序设计》——By Nicholas C.Zakas</h3>
+<hr />
+<h3>《JavaScript DOM编程艺术》——By Jeremy Keith</h3>
+<hr />
+<h3>《JavaScript经典实例》——By Shelley Powers</h3>
+<hr />
