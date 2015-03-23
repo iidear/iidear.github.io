@@ -1,6 +1,6 @@
-/* @group general styles
+/* @general styles
 ---------------------------------------------------------------*/
-body,div,ul,li,dl,dd,h2,h3,h4,p{  margin:0;padding:0;}
+body,div,ul,li,h4{  margin:0;padding:0;}
 body {  width:85%; margin:0 auto; 
 font-family:"Lucida Grande","微软雅黑",Verdana,Lucida,Arial,Helvetica,"宋体",sans-serif;}
 /*  @mainNav
@@ -11,22 +11,31 @@ font-family:"Lucida Grande","微软雅黑",Verdana,Lucida,Arial,Helvetica,"宋�
 	overflow:hidden;
 }
 #mainNav li{  float:left;}
-#mainNav li a{  display:block; text-decoration:none; color:#666; font-size:30px; padding:0 1em; border-right:1px solid black;}
+#mainNav li a{  display:block; text-decoration:none; color:#666; font-size:20px; padding:0 1em; border-right:1px solid black;}
 #mainNav li:last-child a{  border-right:none;}
 
-/*  @article
+/*  @content
 -----------------------------------------------------------------*/
-#article{  padding:30px;; width:75%; float:left; border-top:1px solid #999;}
-h3{ margin-bottom:1em;}
-#article h4{  margin:1em 0;}
-#article p{  text-indent:2em;}
+.content{  padding:20px; width:75%; border-top:1px solid #999;}
 
-/*  @articleNav
+/*  @rightNav
 -----------------------------------------------------------------*/
-#articleNav{  border-left:1px solid #ccc; padding-left:0.5em; width:14%; position:fixed; right:5%;}
-#articleNav dt{  font-weight:bold; color:#333;}
-#articleNav dd{  text-indent:1.5em;}
-#articleNav dd a{  text-decoration:none; color:#666; line-height:1.4em;}
-#articleNav dd a:hover{  font-weight:bold;}
+#rightNav{  width:20.8%; position:fixed; right:5%; top:25%; list-style-type:none; 
+border-left:1px solid #999;}
+#rightNav>li{  text-indent:1em; margin:0.5em 0; text-indent:1em;}
+#rightNav li ul{  list-style-type:none; padding-left:1.5em;}
+#rightNav li ul a{  display:block; font-size:18px; text-decoration:none; color:#666;}
+#rightNav li ul a:hover{  font-weight:bold;}
 
-/*  @about me  */
+/*  @books  */
+#bookRead{  margin-top:1em;}
+#bookRead li ul{  list-style-type:none;}
+
+/*  @html  */
+#html p{  text-indent:2em;}
+
+/*  @js  */
+#js_1 ul{  list-style-type:none;}
+#js_1 ul li{ margin:0.5em 1em;}
+/*  @about  */
+#about{  margin-top:1em;}
