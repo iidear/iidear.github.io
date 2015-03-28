@@ -27,6 +27,29 @@ border-left:1px solid #999;}
 #rightNav li ul a{  display:block; font-size:18px; text-decoration:none; color:#666;}
 #rightNav li ul a:hover{  font-weight:bold;}
 
+/*  @index  */
+#helloWorld{  width:400px; margin:0 auto; position:relative;}
+#helloWorld div{ position:absolute; opacity:0.4;
+height:240px; width:240px; border-radius:50%;
+animation: round 3s infinite;
+animation-timing-function:linear;}
+
+#helloWorld div.leftDiv{ border:20px solid #FF0000; clip:rect(0px 140px 280px 0px);}
+
+#helloWorld div.rightDiv{ border:20px solid #00FF00; clip:rect(0px 280px 280px 140px);}
+
+#helloWorld div.upDiv{ border:20px solid #0000FF; 
+clip:rect(0px 280px 140px 0px);}
+
+#helloWorld div.downDiv{ border:20px solid #000000; 
+clip:rect(140px 280px 280px 0px);
+animation: round 6s infinite;}
+
+@keyframes round{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+
 /*  @books  */
 #bookRead{  margin-top:1em;}
 #bookRead li ul{  list-style-type:none;}
@@ -35,6 +58,8 @@ border-left:1px solid #999;}
 #html p{  text-indent:2em;}
 
 /*  @js  */
+#js article{ border-bottom:1px dotted gray; padding-bottom:2em;}
+#js article p{ margin-left:1em;}
 #js_1 ul{  list-style-type:none;}
 #js_1 ul li{ margin:0.5em 1em;}
 /*  @about  */
