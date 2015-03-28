@@ -1,8 +1,0 @@
-﻿<h3>《HTML权威指南》</h3>
-<hr />
-<h3>《CSS权威指南》</h3>
-<hr />
-<h3>《网页开发手记:HTML+CSS+JavaScript实战详解》</h3>
-<hr />
-<h3>《Head first HTML5 programming》</h3>
-<hr />

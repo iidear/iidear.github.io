@@ -1,2 +1,0 @@
-﻿<h3>《Web性能权威指南》——By Ilya Grigorik</h3>
-<hr />
