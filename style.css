@@ -32,7 +32,13 @@ border-left:1px solid #999;}
 #helloWorld div{ position:absolute; opacity:0.4;
 height:240px; width:240px; border-radius:50%;
 animation: round 3s infinite;
-animation-timing-function:linear;}
+-moz-animation: round 3s infinite;
+-webkit-animation: round 3s infinite;
+-o-animation: round 3s infinite;
+animation-timing-function:linear;
+-moz-animation-timing-function:linear;
+-webkit-animation-timing-function:linear;
+-o-animation-timing-function:linear;}
 
 #helloWorld div.leftDiv{ border:20px solid #FF0000; clip:rect(0px 140px 280px 0px);}
 
@@ -46,6 +52,18 @@ clip:rect(140px 280px 280px 0px);
 animation: round 6s infinite;}
 
 @keyframes round{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+@-moz-animation-keyframes round{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+@-webkit-keyframes round{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+@-o-keyframes round{
 	from{transform:rotate(0deg);}
 	to{transform:rotate(360deg);}
 }
