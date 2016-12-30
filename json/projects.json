@@ -1,0 +1,24 @@
+{
+	"status": 1,
+	"data": [{
+		"name": "微店官网",
+		"link": "https://www.weidian.com/",
+		"duty": "全权负责项目开发及维护",
+		"desc": ["登录功能","轮播特效","兼容IE7及以上"]
+	},{
+		"name": "微店卖家后台管理系统",
+		"link": "https://d.weidian.com/",
+		"duty": "部分业务模块的开发与维护",
+		"desc": ["读了angular1.x部分源码，在公司内部作了数据双向绑定机制的分享","完成账号注册页面（表单校验提交）","列表管理（列表项增删改查）","列表项内容编辑（富文本angular+ueditor）","angular通用组件"]
+	},{
+		"name": "微店直通车",
+		"link": "https://mp.weidian.com/",
+		"duty": "项目开发",
+		"desc": ["技术选型gulp+webpack+vuejs","试用Vue，顺带玩数据可视化的echart。"]
+	},{
+		"name": "微店自定义页面",
+		"link": "https://weidian.com/diyPage/index.php?id=148593",
+		"duty": "自定义页面H5开发",
+		"desc": ["卖家DIY的页面，用于推广自家店铺","公司内部脚手架工具生成项目，包括目录结构，构建工具grunt，seajs模块化方案，zepto库，rem方案解决移动端兼容适配问题","学习了淘宝的多个静态资源拼接为一个url减少请求数的方案。"]
+	}]
+}
