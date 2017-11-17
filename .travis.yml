@@ -2,4 +2,9 @@ language: node_js
 
 before_install:
   echo 'hello, ci'
-  
+
+script:
+  echo 'hello, travis'
+
+after_script:
+  echo 'done'
